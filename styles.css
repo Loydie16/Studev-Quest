@@ -27,11 +27,12 @@ a:hover{
 /* Header */
 header {
     position: fixed;
-  top: 0;
-  width: 100%;
+    top: 0;
+    width: 100%;
     padding: 0 2rem;
     background-color: #f6f9fc   ;
     border-bottom: 1px solid #000000;
+    z-index: 1;
 }
 
 .navbar {
@@ -170,13 +171,12 @@ header {
 }
 
 
-
+/* Hero Section */
 main {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-items: center;
-
 }
 
 svg {
@@ -191,7 +191,8 @@ svg {
 .hero-content {
     display: flex;
     flex-direction: row;
-    margin: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     align-items: center;
     justify-content: space-between;
     align-self: center;
@@ -257,6 +258,8 @@ svg {
     transition: all 0.5s ease-in-out;
 }
 
+
+/* Features Section */
 .feature-section { 
     display: flex;
     align-items: center;
@@ -304,17 +307,13 @@ svg {
     line-height: 1;
 }
 
-.featured-products {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.featured-products-section {
     margin: 0 2rem;
     margin-top: 6rem;
 }
 
 .featuredProduct-txt {
     text-align: center;
-    
 }
 
 .featuredProduct-txt h1 {
@@ -325,6 +324,141 @@ svg {
     font-size: 1.5rem;
     margin-top: 1rem;
 }
+
+
+/* Featured Products Section */
+.featured-products {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.product-card {
+    width: 300px;
+    padding: 1rem;
+    background-color: #f6f9fc;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px  rgba(114, 114, 114, 0.4);
+}
+
+.product-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.product-img img{
+    width: 275px;
+    height: 275 0px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-details {
+    padding-top: 10px;
+    position: relative;
+}
+
+.product-details .product-category{
+    font-size: 12px;
+    font-weight: lighter;
+    color: gray;
+}
+
+.product-details .product-name {
+    font-size: 24px;
+    font-weight: bolder;
+    margin-top: 4px;
+    
+}   
+
+.product-details .product-rating {
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+.product-details .product-sold{
+    font-size: 10px;
+    font-weight: normal;
+    color: gray;
+}
+
+.product-details .product-prices {
+    margin-top: 12px;
+}
+
+.product-prices .new-price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product-prices .old-price {
+    font-size: 12px;
+    font-weight: lighter;
+    text-decoration: line-through;
+    color: gray;
+}
+
+.product-details .cart-btn {
+    position: absolute;
+    right: 10px;
+    top: 65px; 
+    background-color: #de7258;
+    color: #f6f9fc;
+    width: 40px;
+    height: 40px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-btn .fa-cart-plus {
+    font-size: 18px;
+}
+
+.product-img .banner {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #de7258;
+    color: #f6f9fc;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.product-img:hover {
+    box-shadow: 2px 4px 6px rgba(114, 114, 114, 0.9);
+    transform: scale(1.01);
+    transition: all 0.5s ease-in-out;
+}
+
+/* Flash Sale Banner */
+
+.sale-banner{
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+}
+
+.sale-banner-content {
+    background-image: url(./assets/Images/b17.jpg);
+    background-size: cover;
+
+}
+
+
 
 /* Header navbar responsive */
 @media (max-width: 992px) {
@@ -352,8 +486,7 @@ svg {
 
     .hero-content {
         flex-direction: column-reverse;
-        gap: 2rem;
-        
+        gap: 2rem; 
     }
 
     .hero-text {
