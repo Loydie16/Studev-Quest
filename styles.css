@@ -307,20 +307,20 @@ svg {
     line-height: 1;
 }
 
-.featured-products-section {
+.featured-products-section, .new-released-products-section {
     margin: 0 2rem;
     margin-top: 6rem;
 }
 
-.featuredProduct-txt {
+.featuredProduct-txt, .new-released-product-txt {
     text-align: center;
 }
 
-.featuredProduct-txt h1 {
+.featuredProduct-txt h1, .new-released-product-txt h1 {
     font-size: 3rem;
 }
 
-.featuredProduct-txt p {
+.featuredProduct-txt p, .new-released-product-txt p {
     font-size: 1.5rem;
     margin-top: 1rem;
 }
@@ -373,7 +373,10 @@ svg {
     font-size: 24px;
     font-weight: bolder;
     margin-top: 4px;
-    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
 }   
 
 .product-details .product-rating {
@@ -446,16 +449,148 @@ svg {
 
 /* Flash Sale Banner */
 
-.sale-banner{
-    width: 100%;
-    height: auto;
-    padding: 2rem;
+.sale-banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 6rem;
+    margin-left: 2rem;
+    margin-right: 2rem
 }
 
-.sale-banner-content {
-    background-image: url(./assets/Images/b17.jpg);
+.sale-banner-content1 , .sale-banner-content2{
+    width:100%;
+    height: 420px;
     background-size: cover;
+    
+    border-radius: 20px;
+}
 
+.sale-banner-content1 {
+    background-image: url(./assets/Images/b4.jpg);
+}
+
+.sale-banner-content2 {
+    background-image: url(./assets/Images/b17.jpg);
+}
+
+.sale-title-txt {
+    padding: 20px;
+}
+
+.sale-title-txt h1 {
+    font-weight: bolder;
+    font-size: 34px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.sale-title-txt p {
+    font-weight: lighter;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.sale-title-txt h3 {
+    font-weight: bolder;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 70%;
+}
+
+.sale-banner-prices {
+    padding-left: 20px;
+}
+
+.new-sale-banner-price{
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff6139;
+}
+
+.old-sale-banner-price {
+    font-size: 24px;
+    font-weight: lighter;
+    text-decoration: line-through;
+    color: rgb(77, 77, 77);
+    margin-left: 10px;
+}
+
+.sale-time {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.timer-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.timer-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.timer-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #ff9765;
+}
+
+.timer-box .timer-number {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.colon {
+    position: relative;
+    top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.timer-left p {
+    margin-top: 5px;
+}
+
+.shop-now-btn {
+    padding-left: 20px;
+    margin-top: 60px;
+}
+
+.shop-now-btn a {
+    padding: 15px 25px;
+    background-color: #de7258;
+    color: #f6f9fc;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+.shop-now-btn a:hover {
+    background-color: transparent;
+    color: #f6f9fc;
+    border: 1px solid #de7258;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+
+
+.sale-banner-content h1 {
+    font-size: 24px;
+  
 }
 
 
@@ -514,6 +649,12 @@ svg {
         justify-content: center;
         gap: 2rem;
    }
+
+   .sale-banner {
+        flex-direction: column;
+   }
+
+
 }
 
 @media (max-width: 768px) {
@@ -533,10 +674,11 @@ svg {
         display: none;
         transition: 0.8s;
     }
-
-    
 }
 
-@media (max-width: 1185px) {
-
+@media (max-width: 443px) {
+    .shop-now-btn {
+        margin-top: 30px;
+    }
 }
+
