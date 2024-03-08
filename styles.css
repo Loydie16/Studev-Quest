@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,7 +20,7 @@ a {
     font-size: 1.2rem;
 }
 
-a:hover{
+a:hover {
     color: #de7258;
 }
 
@@ -30,7 +30,7 @@ header {
     top: 0;
     width: 100%;
     padding: 0 2rem;
-    background-color: #f6f9fc   ;
+    background-color: #f6f9fc;
     border-bottom: 1px solid #000000;
     z-index: 1;
 }
@@ -65,10 +65,10 @@ header {
     background-color: #fffdfd;
     border-radius: 30px;
     align-items: center;
-    box-shadow: 2px 4px 10px  rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.4);
 }
 
-.navbar .icons .search:hover input{
+.navbar .icons .search:hover input {
     width: 10rem;
 }
 
@@ -82,11 +82,11 @@ header {
 }
 
 .navbar .icons .search a .fas {
-    color:aquamarine;
+    color: aquamarine;
     font-size: 1.5rem;
 }
 
-.navbar .logo a{
+.navbar .logo a {
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -129,14 +129,14 @@ header {
     overflow: hidden;
 }
 
-#dropdown_menu li{
+#dropdown_menu li {
     padding: 0.7rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#dropdown_menu_second .icons  {
+#dropdown_menu_second .icons {
     padding: 0.7rem;
     display: flex;
     flex-direction: column;
@@ -144,7 +144,7 @@ header {
     justify-content: center;
 }
 
-#dropdown_menu_second .icons .cart_user{
+#dropdown_menu_second .icons .cart_user {
     display: flex;
     gap: 5rem;
     align-items: center;
@@ -201,23 +201,23 @@ svg {
     gap: 2rem;
 }
 
-.hero-text{
+.hero-text {
     padding: 4rem;
     width: 50%;
     height: auto;
-    
+
 }
 
-.hero-img{
+.hero-img {
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
     width: 50%;
     height: auto;
-   
+
 }
 
-.hero-img img{
+.hero-img img {
     width: 100%;
 }
 
@@ -260,7 +260,7 @@ svg {
 
 
 /* Features Section */
-.feature-section { 
+.feature-section {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -274,7 +274,7 @@ svg {
     margin: 15px 0;
     background-color: #f6f9fc;
     border-radius: 5px;
-    box-shadow: 2px 4px 10px  rgba(114, 114, 114, 0.4);
+    box-shadow: 2px 4px 10px rgba(114, 114, 114, 0.4);
 }
 
 .features:hover {
@@ -283,7 +283,7 @@ svg {
     transition: all 0.5s ease-in-out;
 }
 
-.feature-img { 
+.feature-img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -294,7 +294,7 @@ svg {
     height: 150px;
 }
 
-.feature-text{
+.feature-text {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -307,27 +307,32 @@ svg {
     line-height: 1;
 }
 
-.featured-products-section, .new-released-products-section {
+.featured-products-section,
+.new-released-products-section {
     margin: 0 2rem;
     margin-top: 6rem;
 }
 
-.featuredProduct-txt, .new-released-product-txt {
+.featuredProduct-txt,
+.new-released-product-txt {
     text-align: center;
 }
 
-.featuredProduct-txt h1, .new-released-product-txt h1 {
+.featuredProduct-txt h1,
+.new-released-product-txt h1 {
     font-size: 3rem;
 }
 
-.featuredProduct-txt p, .new-released-product-txt p {
+.featuredProduct-txt p,
+.new-released-product-txt p {
     font-size: 1.5rem;
     margin-top: 1rem;
 }
 
 
 /* Featured Products Section */
-.featured-products, .new-products {
+.featured-products,
+.new-products {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -341,7 +346,7 @@ svg {
     padding: 1rem;
     background-color: #f6f9fc;
     border-radius: 10px;
-    box-shadow: 2px 4px 10px  rgba(114, 114, 114, 0.4);
+    box-shadow: 2px 4px 10px rgba(114, 114, 114, 0.4);
 }
 
 .product-img {
@@ -351,7 +356,7 @@ svg {
     position: relative;
 }
 
-.product-img img{
+.product-img img {
     width: 275px;
     height: 275 0px;
     object-fit: cover;
@@ -363,7 +368,7 @@ svg {
     position: relative;
 }
 
-.product-details .product-category{
+.product-details .product-category {
     font-size: 12px;
     font-weight: lighter;
     color: gray;
@@ -377,7 +382,7 @@ svg {
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 300px;
-}   
+}
 
 .product-details .product-rating {
     font-size: 10px;
@@ -385,7 +390,7 @@ svg {
     margin-top: 4px;
 }
 
-.product-details .product-sold{
+.product-details .product-sold {
     font-size: 10px;
     font-weight: normal;
     color: gray;
@@ -410,7 +415,7 @@ svg {
 .product-details .cart-btn {
     position: absolute;
     right: 10px;
-    top: 65px; 
+    top: 65px;
     background-color: #de7258;
     color: #f6f9fc;
     width: 40px;
@@ -452,7 +457,7 @@ svg {
 .sale-banner {
     display: flex;
     flex-direction: row;
-    align-items: center ;
+    align-items: center;
     justify-content: center;
     gap: 2rem;
     margin-top: 6rem;
@@ -460,11 +465,12 @@ svg {
     margin-right: 2rem
 }
 
-.sale-banner-content1 , .sale-banner-content2{
-    width:100%;
+.sale-banner-content1,
+.sale-banner-content2 {
+    width: 100%;
     height: 420px;
     background-size: cover;
-    
+
     border-radius: 20px;
 }
 
@@ -483,7 +489,7 @@ svg {
 .sale-title-txt h1 {
     font-weight: bolder;
     font-size: 34px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .sale-title-txt p {
@@ -503,7 +509,7 @@ svg {
     padding-left: 20px;
 }
 
-.new-sale-banner-price{
+.new-sale-banner-price {
     font-size: 40px;
     font-weight: bold;
     color: #ff6139;
@@ -528,7 +534,7 @@ svg {
     gap: 5px;
 }
 
-.timer-left{
+.timer-left {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -536,7 +542,7 @@ svg {
     margin-top: 10px;
 }
 
-.timer-box{
+.timer-box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -586,7 +592,7 @@ svg {
 
 .sale-banner-content h1 {
     font-size: 24px;
-  
+
 }
 
 /* Different Products */
@@ -601,8 +607,6 @@ svg {
     margin-top: 4rem;
 }
 
-
-
 .hot-release-txt,
 .top-selling-txt,
 .trending-txt,
@@ -611,7 +615,6 @@ svg {
     width: 100%;
     padding-left: 20px;
     position: relative;
-        /* Added */
     border: none;
 }
 
@@ -624,13 +627,9 @@ svg {
     border-bottom: 2px solid;
     border-image: linear-gradient(to left, #dadada 70%, #de7258 20%) 1;
     position: absolute;
-    /* Added */
     left: 0;
-    /* Added */
     right: 0;
-    /* Added */
     bottom: -15px;
-    /* Adjust as needed */
 }
 
 .different-products-card {
@@ -668,6 +667,158 @@ svg {
     max-width: 250px;
 }
 
+/* Newsletter Section */
+
+.newsletter-section {
+    margin-top: 2rem;
+    width: 100%;
+    height: 10rem;
+    background-color: #e7c8ac;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 0 4rem;   
+}
+
+.newsletter-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center ;
+    gap: 3rem;
+}
+
+.newsletter-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;  
+}
+
+.newsletter-form {
+    display: flex;
+    width: 40%;
+    padding-left: 4rem;
+}
+
+.newsletter-form input[type="email"] {
+    padding-inline: 1.25rem;
+    width: 100%;
+    height: 48px;
+    border-radius: 0.25rem 0 0 0.25rem;
+    border: none;
+}
+
+.newsletter-form .newsletter-btn {
+    padding: 10px; 
+    background-color: #de7258; 
+    color: #fff;
+    border: none;
+    border-radius: 0 0.25rem 0.25rem 0;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.newsletter-icon {
+    width: 40px;
+    height: auto;
+}
+
+/* Footer Section */    
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #f6f9fc;
+    display: flex;
+    flex-direction: row;
+    padding: 20px 60px;
+
+    
+    flex-wrap: wrap;
+    gap: 6rem;
+}
+
+.logo-txt {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.contact-txt{
+    margin-bottom: 10px;
+}
+
+.contact-socials{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.address-content, .phone-content, .hours-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.socials{
+    margin-top: 15px;
+}
+
+.socials-icon{
+    display: flex;
+    margin-top: 10px;
+    gap: 1rem;
+}
+
+.company, .my-account, .payment-gateways{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.company-links, .my-account-links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.company-txt, .my-account-txt, .payment-gateways-txt {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.payment-logo {
+    width: 244px;
+    height: 32px;
+}
+
+.gcash-logo {
+    width: 244px;
+    height: 50px;
+}
+
+.paymaya-logo {
+    width: 244px;
+    height: 70px;
+    margin-top: -10px;
+}
+
+.bank-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 1rem;
+    text-align: center;
+}
+
 
 
 /* Header navbar responsive */
@@ -696,17 +847,17 @@ svg {
 
     .hero-content {
         flex-direction: column-reverse;
-        gap: 2rem; 
+        gap: 2rem;
     }
 
     .hero-text {
         width: 100%;
         padding: 0 2rem 0 2rem;
         text-align: center;
-        
+
     }
 
-   
+
 
     .hero-text h1 {
         font-size: 3rem;
@@ -720,15 +871,34 @@ svg {
         font-size: 1.5rem;
     }
 
-   .feature-section{
+    .feature-section {
         justify-content: center;
         gap: 2rem;
-   }
+    }
 
-   .sale-banner {
+    .sale-banner {
         flex-direction: column;
-   }
+    }
 
+    .newsletter-content {
+
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .newsletter-form input[type="email"] {
+        border-radius: 0.5rem;
+    }
+
+    .newsletter-form .newsletter-btn {
+        border-radius: 0.5rem;
+        margin-top: 10px;
+    }
 
 }
 
@@ -758,6 +928,7 @@ svg {
 }
 
 @media (max-width: 372px) {
+
     .sale-banner-content1,
     .sale-banner-content2 {
         height: 500px;
@@ -772,3 +943,17 @@ svg {
     }
 }
 
+@media (max-width: 650px) {
+
+    .newsletter-section{
+        flex-direction: column;
+        gap: 2rem;
+        height: 40%;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0rem;
+    }
+}
