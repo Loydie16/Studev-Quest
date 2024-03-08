@@ -327,7 +327,7 @@ svg {
 
 
 /* Featured Products Section */
-.featured-products {
+.featured-products, .new-products {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -584,13 +584,88 @@ svg {
     transition: all 0.5s ease-in-out;
 }
 
-
-
-
-
 .sale-banner-content h1 {
     font-size: 24px;
   
+}
+
+/* Different Products */
+
+.different-products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 6rem;
+    margin-top: 4rem;
+}
+
+
+
+.hot-release-txt,
+.top-selling-txt,
+.trending-txt,
+.flash-sales-deals-txt {
+    margin-top: 2rem;
+    width: 100%;
+    padding-left: 20px;
+    position: relative;
+        /* Added */
+    border: none;
+}
+
+.hot-release-txt::after,
+.top-selling-txt::after,
+.trending-txt::after,
+.flash-sales-deals-txt::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to left, #dadada 70%, #de7258 20%) 1;
+    position: absolute;
+    /* Added */
+    left: 0;
+    /* Added */
+    right: 0;
+    /* Added */
+    bottom: -15px;
+    /* Adjust as needed */
+}
+
+.different-products-card {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 20px;
+}
+
+.different-products-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.different-products-card img:hover {
+    box-shadow: 2px 4px 6px rgba(114, 114, 114, 0.9);
+    transform: scale(1.01);
+    transition: all 0.5s ease-in-out;
+}
+
+.product-text {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    padding-left: 20px;
+    width: 100%;
+    gap: 10px;
+}
+
+.different-products-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px;
 }
 
 
@@ -679,6 +754,21 @@ svg {
 @media (max-width: 443px) {
     .shop-now-btn {
         margin-top: 30px;
+    }
+}
+
+@media (max-width: 372px) {
+    .sale-banner-content1,
+    .sale-banner-content2 {
+        height: 500px;
+    }
+
+    .sale-time p {
+        font-size: 12px;
+    }
+
+    .timer-container {
+        gap: 3px;
     }
 }
 
