@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="details.css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">
+                    <h1>JLT Dev</h1>
+                </a>
+            </div>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="icons">
+                <div class="search">
+                    <input type="text" placeholder="Search" />
+                    <i class="fas fa-solid fa-search"></i>
+                </div>
+                <a href="#" class="action_btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <a href="#" class="action_btn">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </div>
+            <div class="toggle_btn">
+                <input type="checkbox" id="toggle" class="toggle-checkbox" title=" " placeholder=" ">
+                <label for="toggle" class="toggle-label">
+                    <span id="toggle-icon" class="fa-solid fa-bars"></span>
+                </label>
+                <div id="dropdown_menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop </a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </div>
+                <div id="dropdown_menu_second">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <div class="icons">
+                        <div class="search">
+                            <input type="text" placeholder="Search" />
+                            <i class="fas fa-solid fa-search"></i>
+                        </div>
+                        <div class="cart_user">
+                            <a href="#" class="action_btn">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                            <a href="#" class="action_btn">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End of Navigation Bar -->
+
+    <!-- Product Detail Section -->
+    <main class="product-detail">
+        <div class="container-row">
+            <div class="product-img-containter">
+
+                <img class="main-img" src="./assets/Images/gallery-4.jpg" alt="">
+
+                <div class="other-img">
+                    <img src="./assets/Images/gallery-1.jpg" alt="">
+                    <img src="./assets/Images/gallery-2.jpg" alt="">
+                    <img src="./assets/Images/gallery-3.jpg" alt="">
+                    <img src="./assets/Images/gallery-4.jpg" alt="">
+                </div>
+
+            </div>
+
+            <div class="detail-container">
+                <h1 class="product-name">
+                    Product Name
+                </h1>
+                <p class="product-type">Shirts</p>
+                <div class="product-rating">
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <span class="product-sold">2.4k Ratings</span>
+                </div>
+                <div class="product-prices">
+                    <p class="new-price">$100.00</p>
+                    <p class="old-price">$200.00</p>
+                    <p class="discounted">25% Off</p>
+                </div>
+                <div class="description-container">
+                    <h3 class="description-title">Description</h3>
+                    <p class="product-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus incidunt maxime facilis
+                        dignissimos nemo
+                        similique? Exercitationem dolorem, modi dignissimos enim voluptas temporibus provident aliquid
+                        minima distinctio
+                        ullam reprehenderit tempore magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Necessitatibus incidunt
+                        maxime facilis dignissimos nemo similique? Exercitationem dolorem, modi dignissimos enim
+                        voluptas temporibus
+                        provident aliquid minima distinctio ullam reprehenderit tempore magnam.
+                    </p>
+                </div>
+
+                <div class="product-color-size">
+                    <div class="product-colors">
+                        <label for="color">Color:</label>
+                        <select name="color" id="color">
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                        </select>
+                    </div>
+                    <div class="product-sizes">
+                        <label for="size">Size:</label>
+                        <select name="size" id="size">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="x-large">X-Large</option>
+                        </select>
+                    </div>
+                    <div class="product-quantity">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="100" value="1">
+                    </div>
+
+                    <p>Availability: <span> 10 on stock</span></p>
+                </div>
+
+                <div class="product-buttons">
+                    <button class="add-to-cart"> <i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- End of Product Detail Section -->
+
+    <!-- Info and Review Section -->
+    <section class="info-review-container">
+        <div class="info-container">
+            <input type="radio" id="additional-info-toggle" class="additional-info" name="toggle-group">
+            <label for="additional-info-toggle" class="toggle-label">
+                <h3 class="aw" id="aww">Additional Information</h3>
+            </label>
+        </div>
+        <div class="review-txt-container">
+            <input type="radio" id="review-toggle" class="review" name="toggle-group">
+            <label for="review-toggle" class="toggle-label">
+                <h3>Reviews</h3>
+            </label>
+        </div>
+    </section>
+    <!-- End of Info and Review Section -->
+
+
+    <!-- Additional Info Section -->
+    <section class="additional-info-container" id="info-container">
+        <div class="main-info">
+            <h1 class="title-info">
+                Our Products in the Company Name
+            </h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aperiam explicabo suscipit earum
+                ducimus. Fugiat hic non minus recusandae incidunt consectetur culpa molestias. Eos pariatur maxime, modi
+                vel fuga inventore?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur excepturi quibusdam, aliquam commodi
+                aliquid odio dicta tempora laboriosam officiis temporibus, soluta impedit corrupti consequuntur ratione
+                cum recusandae dolore, cumque architecto.</p>
+        </div>
+        <div class="other-info-container">
+            <div class="first-other-info">
+                <h3>What is this?</h3>
+                <li>95% Polyester, 5% Spandex</li>
+                <li>Wrap Closure</li>
+                <li>Hand Wash Only</li>
+                <li>Versatile Wear</li>
+                <li>Simple yet flattering shirt</li>
+            </div>
+            <div class="second-other-info">
+                <h3>What makes our product unique?</h3>
+                <p>Always bring you new fashion style and
+                    pretty design. We dedicataj our effort to
+                    design beautiful clothing in top quality. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Distinctio ipsam adipisci dolorum iusto excepturi? Saepe architecto tempora nobis quam beatae
+                    mollitia nostrum rerum impedit hic ipsam exercitationem, rem eum atque?</p>
+            </div>
+            <div class="third-other-info">
+                <h3>Washing Instruction</h3>
+                <p>Hand wash or gentle machine wash with
+                    cold water.</p>
+            </div>
+        </div>
+        <div class="size-reference">
+            <img src="./assets/Images/size-guide.png" alt="">
+        </div>
+    </section>
+
+    <!-- End of Additional Info Section -->
+
+    <!-- Review Section -->
+    <section class="review-container" id="review-container">
+        <div class="rating-review">
+            <h2>Ratings & Reviews</h2>
+            <div class="ratings">
+                <h1>4.8</h1>
+                <span>/</span>
+                <p>3 reviews</p>
+            </div>
+        </div>
+
+        <div class="review-content">
+            <div class="review-box">
+                <div class="review-user">
+                    <div>
+                        <img src="./assets/Images/1.png" alt="">
+                    </div>
+                    <div class="user-details">
+                        <h3>John Doe</h3>
+                        <div class="review-rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <p class="review-date">June 12, 2024</p>
+                        <div class="review-title">
+                            <h2>Great Product</h2>
+                        </div>
+                        <p class="review-txt">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus incidunt maxime
+                            facilis
+                            dignissimos nemo
+                            similique? Exercitationem dolorem, modi dignissimos enim voluptas temporibus provident
+                            aliquid
+                            minima
+                            distinctio
+                            ullam reprehenderit tempore magnam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-box">
+                <div class="review-user">
+                    <div>
+                        <img src="./assets/Images/2.png" alt="">
+                    </div>
+                    <div class="user-details">
+                        <h3>Alan Doe</h3>
+                        <div class="review-rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <p class="review-date">June 12, 2024</p>
+                        <div class="review-title">
+                            <h2>Great Product</h2>
+                        </div>
+                        <p class="review-txt">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus incidunt maxime
+                            facilis
+                            dignissimos nemo
+                            similique? Exercitationem dolorem, modi dignissimos enim voluptas temporibus provident
+                            aliquid
+                            minima
+                            distinctio
+                            ullam reprehenderit tempore magnam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-box">
+                <div class="review-user">
+                    <div>
+                        <img src="./assets/Images/2.png" alt="">
+                    </div>
+                    <div class="user-details">
+                        <h3>Alan Doe</h3>
+                        <div class="review-rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <p class="review-date">June 12, 2024</p>
+                        <div class="review-title">
+                            <h2>Great Product</h2>
+                        </div>
+                        <p class="review-txt">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus incidunt maxime
+                            facilis
+                            dignissimos nemo
+                            similique? Exercitationem dolorem, modi dignissimos enim voluptas temporibus provident
+                            aliquid
+                            minima
+                            distinctio
+                            ullam reprehenderit tempore magnam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-more-btn">
+                <a href="#">View More</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="contact-socials">
+            <a href="#">
+                <h1 class="logo-txt">JLT Dev</h1>
+            </a>
+            <h3 class="contact-txt">
+                Contacts
+            </h3>
+            <div class="address-content">
+                <h4>Address:</h4>
+                <p class="address-txt">
+                    1234 Street Name, Brgy. Name, City Name, Philippines
+                </p>
+            </div>
+            <div class="phone-content">
+                <h4>Phone:</h4>
+                <p class="phone-txt">
+                    +01 2222 3333 / +63 999 888 7777
+                </p>
+            </div>
+            <div class="hours-content">
+                <h4>Hours:</h4>
+                <p class="hours-txt">
+                    10:00 - 18:00 (Mon - Fri)
+                </p>
+            </div>
+            <div class="socials">
+                <h4>Follow Us:</h4>
+                <div class="socials-icon">
+                    <a href="#" class="socials-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="socials-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="socials-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="socials-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="company">
+            <h3 class="company-txt">
+                Company
+            </h3>
+            <ul class="company-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Delivery Information</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </div>
+
+        <div class="my-account">
+            <h3 class="my-account-txt">
+                My Account
+            </h3>
+            <ul class="my-account-links">
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">View Cart</a></li>
+                <li><a href="#">Track My Order</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Order</a></li>
+            </ul>
+        </div>
+        <div class="payment-gateways">
+            <h3 class="payment-gateways-txt">
+                Secured Payment Gateways
+            </h3>
+            <div class="bank-logo">
+                <img class="payment-logo" src="./assets/Images/pay.png" alt="">
+                <img class="gcash-logo" src="./assets/Images/GCash_logo.png" alt="">
+                <img class="paymaya-logo" src="./assets/Images/PayMaya_Logo.png" alt="">
+            </div>
+        </div>
+
+
+        <div class="footer-bottom">
+            <p class="footer-bottom-txt">
+                &copy; 2024 JLT Dev. All rights reserved.
+            </p>
+            <p>Developed By: Jon Loyd Talagtag</p>
+        </div>
+    </footer>
+    <!-- End of Footer Section -->
+
+</body>
+
+</html>
