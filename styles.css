@@ -53,8 +53,12 @@ header {
 }
 
 .navbar .icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1.5rem;
     font-weight: bold;
+    
 }
 
 .navbar .icons .search {
@@ -103,6 +107,49 @@ header {
     display: none;
 }
 
+.action_btn-cart, .action_btn-user{
+    position: relative;
+}
+
+.action_btn-cart::after {
+    content: "Go to Cart";
+    position: absolute;
+    top: 150%;
+    left: 70%;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Transition for opacity and visibility */
+}
+
+.action_btn-user::after {
+    content: "Go to Profile";
+    position: absolute;
+    top: 150%;
+    left: 70%;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Transition for opacity and visibility */
+}
+
+.action_btn-cart:hover::after, .action_btn-user:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
 /* dropdown menu */
 /* Toggle Button Styles */
 .toggle-checkbox {
@@ -114,6 +161,9 @@ header {
     font-size: 1.5rem;
     color: #000;
     margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Dropdown Menu Styles */
@@ -331,6 +381,33 @@ svg {
 
 
 /* Featured Products Section */
+
+.cart-btn {
+    position: relative;
+}
+
+.cart-btn::after {
+    content: "Add to Cart";
+    position: absolute;
+    top: 110%;
+    left: 150%;
+    transform: translateX(-50%);
+    background-color: #e0987c;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Transition for opacity and visibility */
+}
+
+.cart-btn:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
 .featured-products,
 .new-products {
     display: flex;
@@ -840,9 +917,8 @@ footer {
         transition: 0.8s;
     }
 
-    .toggle-checkbox:checked~.toggle-label #toggle-icon::before {
-        content: "\58";
-        /* Unicode for the 'xmark' icon */
+    .toggle-checkbox:checked ~ .toggle-label #toggle-icon {
+        content: url('./assets/Images/x-solid.svg');
     }
 
     .hero-content {
