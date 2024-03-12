@@ -5,6 +5,10 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     height: 100vh;
     background-color: #edede5;
@@ -44,6 +48,12 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+
+.links a.active, #dropdown_menu .active, #dropdown_menu_second .active {
+    color: #de7258;
+    font-weight: bold;
+}
+
 
 .navbar .icons {
     display: flex;
@@ -346,18 +356,27 @@ main {
     display: flex;
     flex-direction: column;
     padding: 2rem;
+    gap: 1rem;
 }
 
 .shop-header h1 {
     font-size: 10rem;
     font-weight: bold;
     color: #dd7155;
+    text-shadow: 0 0 3px #000000, 
+                 0 0 3px #000000, 
+                 0 0 3px #000000, 
+                 0 0 3px #000000; 
 }
 
 .shop-header p {
     font-size: 2rem;
     font-weight: bold;
     color: #f6f9fc;
+    text-shadow: 0 0 2px #919191, 
+                 0 0 2px #919191, 
+                 0 0 2px #919191, 
+                 0 0 2px #919191; 
 }
 
 /* Products Section */
@@ -560,6 +579,10 @@ main {
     font-size: larger;
 }
 
+.sort label {
+    font-size: 20px;
+}
+
 
 /* Search Product Container  */
 
@@ -721,12 +744,18 @@ main {
 
     .search-product label {
         display: block;
+        font-size: 20px;
+        margin-bottom: 10px;
     }
 
     .sort {
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    .sort label{
+        margin-bottom: 10px;
     }
 }
 

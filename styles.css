@@ -5,6 +5,10 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     height: 100vh;
     background-color: #edede5;
@@ -43,6 +47,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.links a.active, #dropdown_menu .active, #dropdown_menu_second .active {
+    color: #de7258;
+    font-weight: bold;
 }
 
 .navbar .icons {
