@@ -602,7 +602,7 @@ main {
 .search-product input[type=text] {
     height: 50px;
     padding-left: 0.5rem;
-    font-size: 17px;
+    font-size: larger;
     border: 1px solid #000000;
     border-right: none;
     border-radius: 8px 0 0 8px;
@@ -736,10 +736,8 @@ main {
     }
 
     .search-product input[type=text] {
-        
         height: 50px;
         border-radius: 8px;
-        font-size: 12px;
         border: 1px solid #000000;
     }
 
