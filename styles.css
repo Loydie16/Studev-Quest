@@ -559,11 +559,11 @@ svg {
 }
 
 .sale-banner-content1 {
-    background-image: url(../assets/Images/b4.jpg);
+    background-image: url(./assets/Images/b4.jpg);
 }
 
 .sale-banner-content2 {
-    background-image: url(../assets/Images/b17.jpg);
+    background-image: url(./assets/Images/b17.jpg);
 }
 
 .sale-title-txt {
@@ -925,7 +925,7 @@ footer {
     }
 
     .toggle-checkbox:checked ~ .toggle-label #toggle-icon {
-        content: url('../assets/Images/x-solid.svg');
+        content: url('./assets/Images/x-solid.svg');
     }
 
     .hero-content {

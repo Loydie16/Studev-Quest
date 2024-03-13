@@ -562,7 +562,7 @@ footer {
     }
 
     .toggle-checkbox:checked~.toggle-label #toggle-icon {
-        content: url('../assets/Images/x-solid.svg');
+        content: url('./assets/Images/x-solid.svg');
     }
 }
 
@@ -594,6 +594,7 @@ footer {
 }
 
 @media (max-width: 425px) {
+
 
 
     footer {
